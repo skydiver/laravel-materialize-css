@@ -1,0 +1,22 @@
+{
+    "name": "skydiver/laravel-materialize-css",
+    "description": "Add Materialize CSS Framework to Laravel",
+    "keywords": ["Materialize", "CSS", "Material Design", "laravel", "CSS Framework"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.*"
+    },
+    "authors": [
+        {
+            "name": "Martin",
+            "email": "martin@flydev.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Skydiver\\LaravelMaterializeCSS\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
