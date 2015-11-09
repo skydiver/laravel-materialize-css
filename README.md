@@ -7,7 +7,7 @@ Materialize CSS Framework for Laravel 5 [http://materializecss.com/]
 
 * Require this package in your composer.json and run composer update.
 ```
-    "mskydiver/laravel-materialize-css": "dev-master"
+    "skydiver/laravel-materialize-css": "dev-master"
 ```
 
 * After updating composer, add the ServiceProvider to the providers array in config/app.php
