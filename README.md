@@ -10,9 +10,14 @@ Materialize CSS Framework for Laravel 5 [http://materializecss.com/]
     "skydiver/laravel-materialize-css": "dev-master"
 ```
 
-* After updating composer, add the ServiceProvider to the providers array in config/app.php
+* After updating composer, add ServiceProvider to the providers array in config/app.php
 ```php
     'Skydiver\LaravelMaterializeCSS\MaterializeCSSServiceProvider',
+```
+
+* Add Facade to the aliases array in config/app.php
+```php
+	'MaterializeCSS' => 'Skydiver\LaravelMaterializeCSS\MaterializeCSS',
 ```
 
 *  Then publish the package's assets to public folder:
