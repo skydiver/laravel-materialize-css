@@ -4,7 +4,7 @@
 
     use Illuminate\Support\Facades\Facade;
 
-    class MaterializeCSSFacade extends Facade {
+    class MaterializeCSS extends Facade {
 
         protected static function getFacadeAccessor() { return 'materialize-css'; }
 
