@@ -17,7 +17,7 @@
         }
 
         protected function registerMaterializeCSSBuilder() {
-            $this->app->bindShared('materialize-css', function($app) {
+            $this->app->singleton('materialize-css', function($app) {
                 return new MaterializeCSSBuilder($app['url']);
             });
         }
