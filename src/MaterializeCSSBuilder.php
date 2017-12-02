@@ -13,7 +13,7 @@
 
         public static function include_full() {
             $return  = self::include_css();
-            $return .= self::tag_js('//code.jquery.com/'.self::$file_jquery);
+            $return .= self::tag_js('https://code.jquery.com/'.self::$file_jquery);
             $return .= self::include_js();
             return $return;
         }
@@ -61,11 +61,11 @@
         }
 
         private static function tag_css($path) {
-            return '<link rel="stylesheet" href="'.$path.'">';
+            return '<link rel="stylesheet" charset="utf-8" href="'.$path.'">';
         }
 
         private static function tag_js($path) {
-            return '<script src="'.$path.'"></script>';
+            return '<script type="text/javascript" src="'.$path.'"></script>';
         }
 
     }
