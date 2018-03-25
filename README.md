@@ -54,9 +54,10 @@ There are differents methods to include Materialize CSS assets:
     {!! MaterializeCSS::include_full() !!}
 ```
 ```html
-    <link rel="stylesheet" href="http://yourdomain.com/materialize-css/css/materialize.min.css">
-    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="http://yourdomain.com/materialize-css/js/materialize.min.js"></script>
+    <link rel="stylesheet" charset="utf-8" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" charset="utf-8" href="http://yourdomain.com/materialize-css/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://yourdomain.com/materialize-css/js/materialize.min.js"></script>
 ```
 
 * **include_all()**
@@ -64,8 +65,9 @@ There are differents methods to include Materialize CSS assets:
     {!! MaterializeCSS::include_all() !!}
 ```
 ```html
-    <link rel="stylesheet" href="http://yourdomain.com/materialize-css/css/materialize.min.css">
-    <script src="http://yourdomain.com/materialize-css/js/materialize.min.js"></script>
+    <link rel="stylesheet" charset="utf-8" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" charset="utf-8" href="http://yourdomain.com/materialize-css/css/materialize.min.css">
+    <script type="text/javascript" src="http://yourdomain.com/materialize-css/js/materialize.min.js"></script>
 ```
 
 * **include_css()**
@@ -73,7 +75,8 @@ There are differents methods to include Materialize CSS assets:
     {!! MaterializeCSS::include_css() !!}
 ```
 ```html
-    <link rel="stylesheet" href="http://yourdomain.com/materialize-css/css/materialize.min.css">
+    <link rel="stylesheet" charset="utf-8" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" charset="utf-8" href="http://yourdomain.com/materialize-css/css/materialize.min.css">
 ```
 
 * **include_js()**
@@ -97,7 +100,7 @@ There are differents methods to include Materialize CSS assets:
     {!! MaterializeCSS::include_secure_js() !!}
 ```
 ```html
-    <script src="https://yourdomain.com/materialize-css/js/materialize.min.js"></script>
+    <script type="text/javascript" src="http://yourdomain.com/materialize-css/js/materialize.min.js"></script>
 ```
 
 * **get_url_css($full=false, $secure=false)**

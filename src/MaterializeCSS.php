@@ -1,13 +1,15 @@
 <?php
 
-    namespace Skydiver\LaravelMaterializeCSS;
+namespace Skydiver\LaravelMaterializeCSS;
 
-    use Illuminate\Support\Facades\Facade;
+use Illuminate\Support\Facades\Facade;
 
-    class MaterializeCSS extends Facade {
+class MaterializeCSS extends Facade {
 
-        protected static function getFacadeAccessor() { return 'materialize-css'; }
-
+    protected static function getFacadeAccessor() {
+        return 'materialize-css';
     }
+
+}
 
 ?>
