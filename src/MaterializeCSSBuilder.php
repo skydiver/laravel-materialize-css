@@ -8,13 +8,14 @@ class MaterializeCSSBuilder {
     private static $file_css_min = '/materialize-css/css/materialize.min.css';
     private static $file_js      = '/materialize-css/js/materialize.js';
     private static $file_js_min  = '/materialize-css/js/materialize.min.js';
-    private static $jquery_ver   = 'jquery-3.3.1.min.js';
+    private static $css_icons    = 'https://fonts.googleapis.com/icon?family=Material+Icons';
+    private static $jquery_url   = 'https://code.jquery.com/jquery-3.3.1.min.js';
     private static $jquery_sha   = 'sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=';
 
 
     public static function include_full() {
         $return  = self::include_css();
-        $return .= self::tag_js('https://code.jquery.com/'.self::$jquery_ver);
+        $return .= self::jquery_tag_js(self::$jquery_url);
         $return .= self::include_js();
         return $return;
     }
@@ -26,7 +27,9 @@ class MaterializeCSSBuilder {
     }
 
     public static function include_css() {
-        return self::tag_css(asset(self::$file_css_min));
+        $return  = self::tag_css(self::$css_icons);
+        $return .= self::tag_css(asset(self::$file_css_min));
+        return $return;
     }
 
     public static function include_js() {
@@ -69,8 +72,8 @@ class MaterializeCSSBuilder {
         return '<script type="text/javascript" src="'.$path.'"></script>';
     }
 
-    private static function jquery_tag_js($path) {
-        return '<script src="'.$path.'" integrity="'.$jquery_sha.'" crossorigin="anonymous"></script>';
+    private static function jquery_tag_js() {
+        return '<script src="'.self::$jquery_url.'" integrity="'.self::$jquery_sha.'" crossorigin="anonymous"></script>';
     }
 
 }
